@@ -1614,10 +1614,6 @@ section {
   padding-bottom: clamp(4.375rem, 4rem + 1.875vw, 6.25rem);
 }
 
-.pb-20 {
-  padding-bottom: 5rem;
-}
-
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -1636,10 +1632,6 @@ section {
 
 .pl-4 {
   padding-left: 1rem;
-}
-
-.pt-0 {
-  padding-top: 0px;
 }
 
 .pt-100 {
@@ -2036,8 +2028,10 @@ header nav .current-menu-item a {
   flex-shrink: 0;
 }
 
-.newsletter_section {
-  padding: clamp(6.25rem, 5rem + 6.25vw, 12.5rem) 0;
+@media (min-width:1200px) {
+  .newsletter_section {
+    padding: clamp(6.25rem, 5rem + 6.25vw, 12.5rem) 0;
+  }
 }
 
 .newsletter_section .wpcf7-list-item {
@@ -2199,7 +2193,7 @@ header nav .current-menu-item a {
 @media (max-width:575px) {
   .post-wrapper h3{
     font-size: 16px;
-    line-height: 1;
+    line-height: 1.5;
   }
 }
 
@@ -2363,8 +2357,16 @@ header nav .current-menu-item a {
 
   .text-h5{
     font-size: 16px;
-    line-height: 1;
+    line-height: 1.5;
   }
+}
+
+.first\:pt-0:first-child {
+  padding-top: 0px;
+}
+
+.last\:pb-0:last-child {
+  padding-bottom: 0px;
 }
 
 .last-of-type\:hidden:last-of-type {
@@ -2705,6 +2707,10 @@ header nav .current-menu-item a {
     margin-bottom: 2.5rem;
   }
 
+  .xl\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
   .xl\:mb-20 {
     margin-bottom: 5rem;
   }
@@ -2785,6 +2791,10 @@ header nav .current-menu-item a {
     align-items: flex-start;
   }
 
+  .xl\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .xl\:gap-14 {
     gap: 3.5rem;
   }
@@ -2799,8 +2809,17 @@ header nav .current-menu-item a {
     margin-bottom: calc(5rem * var(--tw-space-y-reverse));
   }
 
+  .xl\:py-\[22px\] {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
   .xl\:pb-12 {
     padding-bottom: 3rem;
+  }
+
+  .xl\:pb-\[22px\] {
+    padding-bottom: 22px;
   }
 
   .xl\:pr-11 {

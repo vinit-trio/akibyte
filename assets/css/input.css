@@ -366,8 +366,10 @@ header nav .current-menu-item a {
   flex-shrink: 0;
 }
 
-.newsletter_section {
-  padding: clamp(6.25rem, 5rem + 6.25vw, 12.5rem) 0;
+@media (min-width:1200px) {
+  .newsletter_section {
+    padding: clamp(6.25rem, 5rem + 6.25vw, 12.5rem) 0;
+  }
 }
 
 .newsletter_section .wpcf7-list-item {
@@ -599,6 +601,6 @@ header nav .current-menu-item a {
   }
   .text-h5{
     font-size: 16px;
-    line-height: 1;
+    line-height: 1.5;
   }
 }
