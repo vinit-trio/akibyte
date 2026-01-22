@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Akibite">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Akibite</title>
+  <script defer src="assets/js/alpine.js"></script>
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/swiper.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <a class="skip-link screen-reader-text" href="#main_content">Skip to content</a>
+  <div class="page_loader"></div>
+  <header class="py-4" id="main_header" x-data="dropdown_menu">
+    <div class="container">
+      <div class="flex justify-between items-center gap-10">
+        <div class="logo">
+          <a href="https://new.akibite.com/">
+            <img src="https://new.akibite.com/wp-content/uploads/2025/07/logo-1.svg" alt="Akibyte Logo"
+              class="custom-logo">
+          </a>
+        </div>
+        <nav class="hidden">
+          <ul id="menu-header-de" class="flex items-center gap-10">
+            <li id="menu-item-14"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-12 current_page_item menu-item-14">
+              <a href="https://new.akibite.com/" aria-current="page">Home</a></li>
+            <li id="menu-item-326" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-326"><a
+                href="https://new.akibite.com/wir/">Über uns</a></li>
+            <li id="menu-item-452"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-452"><a
+                href="https://new.akibite.com/webservices/">Webservices</a>
+              <ul class="sub-menu" style="overflow: hidden;">
+                <li id="menu-item-2127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2127">
+                  <a href="https://new.akibite.com/branding/">Branding</a></li>
+                <li id="menu-item-2172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172">
+                  <a href="https://new.akibite.com/webdesign-agentur/">UI/UX Design</a></li>
+                <li id="menu-item-2171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2171">
+                  <a href="https://new.akibite.com/websites/">Websites</a></li>
+                <li id="menu-item-2170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2170">
+                  <a href="https://new.akibite.com/onlineshop-agentur/">Onlineshops</a></li>
+                <li id="menu-item-2169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2169">
+                  <a href="https://new.akibite.com/marketing/">Marketing</a></li>
+                <li id="menu-item-2168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2168">
+                  <a href="https://new.akibite.com/seo-agentur/">SEO</a></li>
+                <li id="menu-item-2167" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2167">
+                  <a href="https://new.akibite.com/geo/">GEO</a></li>
+              </ul>
+            </li>
+            <li id="menu-item-704" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-704"><a
+                href="https://new.akibite.com/ki-automation/">Automation</a></li>
+            <li id="menu-item-705"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-705"><a
+                href="https://new.akibite.com/kurse/">Workshops</a>
+              <ul class="sub-menu" style="overflow: hidden;">
+                <li id="menu-item-3093" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3093">
+                  <a href="https://new.akibite.com/chatgpt-workshop-fuer-content-creator/">Chat GPT für Content
+                    Creator</a></li>
+                <li id="menu-item-3092" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3092">
+                  <a href="https://new.akibite.com/seo-keyword-recherche-workshop/">SEO Workshop</a></li>
+              </ul>
+            </li>
+            <li id="menu-item-3005" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3005"><a
+                href="https://new.akibite.com/blog/">Ratgeber</a></li>
+            <li id="menu-item-1338" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1338"><a
+                href="https://new.akibite.com/kontakt/">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="shrink-0 flex gap-5 items-center" x-data="{ open: false }">
+          <a href="https://calendly.com/oleg-akibyte/15min"
+            class="hidden sm:flex bg-primary text-secondary py-[6.5px] px-[18px] text-[15px] gap-4 leading-[15px] items-center rounded-full font-medium hover:bg-[#C1C1C1] transition"
+            target="_blank" aria-label="kostenlose Beratung">
+            <span>kostenlose Beratung</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M5 12l14 0"></path>
+              <path d="M13 18l6 -6"></path>
+              <path d="M13 6l6 6"></path>
+            </svg>
+          </a>
+          <button aria-label="button" @click="open = true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32 " viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M4 6h16"></path>
+              <path d="M7 12h13"></path>
+              <path d="M10 18h10"></path>
+            </svg>
+          </button>
+          <div x-show="open" x-transition.opacity="" @click="open = false"
+            class="fixed inset-0 bg-black bg-opacity-50 z-40" style="display: none;"></div>
+          <div x-show="open" x-transition:enter="transition transform duration-300"
+            x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0"
+            x-transition:leave="transition transform duration-300" x-transition:leave-start="translate-x-0"
+            x-transition:leave-end="-translate-x-full"
+            class="fixed top-0 left-0 w-80 h-full bg-primary shadow-lg z-50 p-7" style="display: none;">
+            <div class="flex justify-between items-center mb-10">
+              <a href="https://new.akibite.com/" class="custom-logo-link" rel="home" aria-current="page"><img
+                  width="300" height="55" src="https://new.akibite.com/wp-content/uploads/2025/07/logo-1.svg"
+                  class="custom-logo w-[175px]" alt="Akibyte Logo" decoding="async"></a> <button aria-label="button"
+                @click="open = false" class="text-gray-600 text-2xl">×</button>
+            </div>
+            <!-- Off cancvas Dynamic Start -->
+            <nav>
+              <ul id="menu-header-de-1" class="flex flex-col gap-2 text-[13px] text-black">
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-12 current_page_item menu-item-14">
+                  <a href="https://new.akibite.com/" aria-current="page">Home</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-326"><a
+                    href="https://new.akibite.com/wir/">Über uns</a></li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-452">
+                  <a href="https://new.akibite.com/webservices/">Webservices</a>
+                  <ul class="sub-menu" style="overflow: hidden;">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2127"><a
+                        href="https://new.akibite.com/branding/">Branding</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
+                        href="https://new.akibite.com/webdesign-agentur/">UI/UX Design</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2171"><a
+                        href="https://new.akibite.com/websites/">Websites</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2170"><a
+                        href="https://new.akibite.com/onlineshop-agentur/">Onlineshops</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2169"><a
+                        href="https://new.akibite.com/marketing/">Marketing</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2168"><a
+                        href="https://new.akibite.com/seo-agentur/">SEO</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2167"><a
+                        href="https://new.akibite.com/geo/">GEO</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-704"><a
+                    href="https://new.akibite.com/ki-automation/">Automation</a></li>
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-705">
+                  <a href="https://new.akibite.com/kurse/">Workshops</a>
+                  <ul class="sub-menu" style="overflow: hidden;">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3093"><a
+                        href="https://new.akibite.com/chatgpt-workshop-fuer-content-creator/">Chat GPT für Content
+                        Creator</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3092"><a
+                        href="https://new.akibite.com/seo-keyword-recherche-workshop/">SEO Workshop</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3005"><a
+                    href="https://new.akibite.com/blog/">Ratgeber</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1338"><a
+                    href="https://new.akibite.com/kontakt/">Kontakt</a></li>
+              </ul>
+            </nav>
+            <!-- Off cancvas Dynamic End -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="main_content">
+    <section class="hero pt-100 mt-100">
+      <div class="container">
+        <div class="flex flex-wrap gap-x-20 gap-y-4 items-end justify-between">
+          <h1 class="text-h1">
+            Our Contact
+          </h1>
+          <div class="space-y-3 text-[#a2a2a2] max-w-[450px]">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="mt-10 grayscale hover:grayscale-0 transition-slow">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19868.373358018045!2d-0.11951900000000001!3d51.503186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2sus!4v1755576382274!5m2!1sen!2sus"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="py-100">
+      <div class="container">
+        <div class="flex flex-col lg:flex-row justify-between gap-20">
+          <div class="lg:w-1/2 xxl:w-5/12">
+            <div class="text-blue uppercase text-sm font-semibold tracking-[3px] mb-4">
+              <p>
+                [ Contact ]
+              </p>
+            </div>
+            <h2 class="text-h2 mb-8">
+              Get In Touch
+            </h2>
+            <div class="contact_form_wrapper">
+              <div class="wpcf7 js" id="wpcf7-f1492-o1" lang="en-US" dir="ltr" data-wpcf7-id="1492">
+                <div class="screen-reader-response">
+                  <p role="status" aria-live="polite" aria-atomic="true"></p>
+                  <ul></ul>
+                </div>
+                <form action="/contact/#wpcf7-f1492-o1" method="post" class="wpcf7-form init" aria-label="Contact form"
+                  novalidate="novalidate" data-status="init">
+                  <fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="1492"><input
+                      type="hidden" name="_wpcf7_version" value="6.1.1"><input type="hidden" name="_wpcf7_locale"
+                      value="en_US"><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1492-o1"><input
+                      type="hidden" name="_wpcf7_container_post" value="0"><input type="hidden"
+                      name="_wpcf7_posted_data_hash" value="">
+                  </fieldset>
+                  <div class="contact_form">
+                    <div class="form_group">
+                      <p><label for="name">First Name<span>*</span></label><br>
+                        <span class="wpcf7-form-control-wrap" data-name="text-380"><input size="40" maxlength="400"
+                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
+                            aria-invalid="false" placeholder="Jhon" value="" type="text" name="text-380"></span>
+                      </p>
+                    </div>
+                    <div class="form_group">
+                      <p><label for="name">Last Name<span>*</span></label><br>
+                        <span class="wpcf7-form-control-wrap" data-name="text-839"><input size="40" maxlength="400"
+                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
+                            aria-invalid="false" placeholder="Doe" value="" type="text" name="text-839"></span>
+                      </p>
+                    </div>
+                    <div class="form_group">
+                      <p><label for="name">Phone<span>*</span></label><br>
+                        <span class="wpcf7-form-control-wrap" data-name="tel-529"><input size="40" maxlength="400"
+                            class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel"
+                            aria-required="true" aria-invalid="false" placeholder="+1 (234) 567 890 00" value=""
+                            type="tel" name="tel-529"></span>
+                      </p>
+                    </div>
+                    <div class="form_group">
+                      <p><label for="name">Email<span>*</span></label><br>
+                        <span class="wpcf7-form-control-wrap" data-name="email-608"><input size="40" maxlength="400"
+                            class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
+                            aria-required="true" aria-invalid="false" placeholder="example@gmail.com" value=""
+                            type="email" name="email-608"></span>
+                      </p>
+                    </div>
+                    <div class="form_group col-span-2">
+                      <p><label for="message">Message<span>*</span></label><br>
+                        <span class="wpcf7-form-control-wrap" data-name="textarea-116"><textarea cols="40" rows="10"
+                            maxlength="2000" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"
+                            placeholder="Hello there!" name="textarea-116"></textarea></span>
+                      </p>
+                    </div>
+                    <div class="form_group col-span-2">
+                      <p><input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit"
+                          value="Submit Form"><span class="wpcf7-spinner"></span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="wpcf7-response-output" aria-hidden="true"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/2 xxl:w-4/12">
+            <div class="mb-5 text-[#a2a2a2] text-base">
+              <p>
+                Contact Info
+              </p>
+            </div>
+            <ul class="text-h5 flex flex-col gap-3 mb-5 xl:mb-10">
+              <li>
+                <a href="#" class="hover:text-blue transition-slow flex items-center gap-3">
+                  12137 Mariana Wall, California 8584
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-blue transition-slow flex items-center gap-3">
+                  grund.info@mail.com
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-blue transition-slow flex items-center gap-3">
+                  +1 (234) 567 890 00
+                </a>
+              </li>
+            </ul>
+            <div class="mb-5 text-[#a2a2a2] text-base">
+              <p>
+                Follow Us
+              </p>
+            </div>
+            <ul class="text-h5 flex flex-col gap-3">
+              <li>
+                <a href="#" class="hover:text-blue transition-slow flex items-center gap-3">
+                  <img src="assets/images/behance.svg" alt="Social icon">
+                  <span>Behance</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-blue transition-slow flex items-center gap-3">
+                  <img src="assets/images/dribble.svg" alt="Social icon">
+                  <span>Dribble</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-blue transition-slow flex items-center gap-3">
+                  <img src="assets/images/instagram.svg" alt="Social icon">
+                  <span>Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-blue transition-slow flex items-center gap-3">
+                  <img src="assets/images/youtube.svg" alt="Social icon">
+                  <span>Youtube</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-blue transition-slow flex items-center gap-3">
+                  <img src="assets/images/facebook.svg" alt="Social icon">
+                  <span>Favebook</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="text-center bg-black px-[30px] pb-100">
+      <div class="bg-secondary">
+        <div class="container p-0 space-y-5 py-100 max-w-[850px]">
+          <div class="text-yellow uppercase text-sm font-semibold tracking-[3px]">
+            <p>
+              [&nbsp;Get Started&nbsp;]
+            </p>
+          </div>
+          <h2 class="text-h2">
+            Unleash the Graceful Potential of Your Brand
+          </h2>
+          <div class="space-y-3 text-[#a2a2a2] max-w-[515px] mx-auto pb-3">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec mattis, pulvinar
+              dapibus leo.
+            </p>
+          </div>
+          <div class="btns flex-wrap flex gap-5 items-center justify-center text-[15px]">
+            <a href="#" class="btn_1 btn_yellow arrow">
+              Get started
+            </a>
+            <button aria-label="button" class="underline underline-offset-8 transition_smooth hover:text-yellow">
+              Contact Us
+            </button>
+          </div>
+        </div>
+        <div class="container p-0">
+          <div class="swiper project_slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div>
+                  <img src="assets/images/project_slider_1.webp" alt="Project image"
+                    class="w-full object-cover object-center">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="assets/images/project_slider_2.webp" alt="Project image"
+                    class="w-full object-cover object-center">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="assets/images/project_slider_3.webp" alt="Project image"
+                    class="w-full object-cover object-center">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="assets/images/project_slider_4.webp" alt="Project image"
+                    class="w-full object-cover object-center">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="pt-100 text-[#a2a2a2] border-t border-[#E0E0E030] text-[15px] xl:text-lg">
+    <div class="container">
+      <div class="space-y-3">
+        <h2 class="text-h2 text-primary">
+          Make your brand unforgettable!
+        </h2>
+        <div class="pb-3">
+          <p>
+            Strategy, design, automation — whatever you need, we're eager to execute. No, really, we are ;)
+          </p>
+        </div>
+        <a href="#" class="btn_1 btn_yellow arrow">
+          Get started
+        </a>
+      </div>
+      <div class="my-12 border-t border-[#E0E0E030]"></div>
+      <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-10 sm:gap-100">
+        <div class="space-y-5">
+          <a aria-label="link" href="#">
+            <img src="assets/images/logo.svg" alt="Logo" class="w-[275px]">
+          </a>
+          <p>
+            Subscribe to our newsletter for latest updates.
+          </p>
+          <div
+            class="border border-[#E0E0E030] py-3 px-4 flex items-center gap-5 w-full justify-between hover:border-primary transition_smooth max-w-80 newsletter-form">
+            <p>
+              <span class="wpcf7-form-control-wrap" data-name="email-30">
+                <label for="email-30" class="sr-only">Email Address</label>
+                <input size="40" maxlength="400"
+                  class="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email" aria-invalid="false"
+                  value="Your email" type="email" name="email-30" id="email-30">
+              </span>
+              <input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Send">
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="text-lg sm:text-xl text-primary mb-4">
+            <p>
+              Contact
+            </p>
+          </div>
+          <ul class="space-y-3">
+            <li>
+              <a aria-label="link" class="hover:text-primary transition_smooth" href="#">12137 Mariana Wall, California
+                8584</a>
+            </li>
+            <li>
+              <a aria-label="link" class="hover:text-primary transition_smooth"
+                href="mailto:grund.info@mail.com">grund.info@mail.com</a>
+            </li>
+            <li>
+              <a aria-label="link" class="hover:text-primary transition_smooth" href="tel:+123456789000">+1 (234) 567
+                890 00</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-lg sm:text-xl text-primary mb-4">
+            <p>
+              Pages
+            </p>
+          </div>
+          <ul class="space-y-3">
+            <li>
+              <a aria-label="link" class="hover:text-primary transition_smooth" href="#">Home</a>
+            </li>
+            <li>
+              <a aria-label="link" class="hover:text-primary transition_smooth" href="#">About</a>
+            </li>
+            <li>
+              <a aria-label="link" class="hover:text-primary transition_smooth" href="#">Services</a>
+            </li>
+            <li>
+              <a aria-label="link" class="hover:text-primary transition_smooth" href="#">Projects</a>
+            </li>
+            <li>
+              <a aria-label="link" class="hover:text-primary transition_smooth" href="#">Blogs</a>
+            </li>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-lg sm:text-xl text-primary mb-4">
+            <p>
+              Follow Us
+            </p>
+          </div>
+          <ul class="space-y-3">
+            <li>
+              <a aria-label="link" class="hover:text-primary transition_smooth flex items-center gap-3" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="text-yellow icon icon-tabler icons-tabler-outline icon-tabler-brand-behance">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5" />
+                  <path d="M3 12l4.5 0" />
+                  <path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1" />
+                  <path d="M16 6l3 0" />
+                </svg>
+                <span>
+                  Behance
+                </span>
+              </a>
+            </li>
+            <li>
+              <a aria-label="link" class="hover:text-primary transition_smooth flex items-center gap-3" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="text-yellow icon icon-tabler icons-tabler-outline icon-tabler-brand-dribbble">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                  <path d="M9 3.6c5 6 7 10.5 7.5 16.2" />
+                  <path d="M6.4 19c3.5 -3.5 6 -6.5 14.5 -6.4" />
+                  <path d="M3.1 10.75c5 0 9.814 -.38 15.314 -5" />
+                </svg>
+                <span>
+                  Dribbble
+                </span>
+              </a>
+            </li>
+            <li>
+              <a aria-label="link" class="hover:text-primary transition_smooth flex items-center gap-3" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="text-yellow icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                  <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                  <path d="M16.5 7.5v.01" />
+                </svg>
+                <span>
+                  Instagram
+                </span>
+              </a>
+            </li>
+            <li>
+              <a aria-label="link" class="hover:text-primary transition_smooth flex items-center gap-3" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="text-yellow icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
+                  <path d="M10 9l5 3l-5 3z" />
+                </svg>
+                <span>
+                  Youtube
+                </span>
+              </a>
+            </li>
+            <li>
+              <a aria-label="link" class="hover:text-primary transition_smooth flex items-center gap-3" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="text-yellow icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+                <span>
+                  Facebook
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="flex flex-col sm:flex-row gap-3 justify-between items-center text-xs sm:text-[15px] py-8 border-t border-[#E0E0E030] mt-12 text-primary font-medium">
+        <p>
+          Copyright © <span x-data="{ year: new Date().getFullYear() }" x-text="year">2025</span> ASK Project
+        </p>
+        <ul class="flex gap-5">
+          <li>
+            <a aria-label="link" href="#">
+              Privacy Policy
+            </a>
+          </li>
+          <li>
+            <a aria-label="link" href="#">
+              Terms & Services
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div x-data="{ show: false, scrollTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); } }"
+    x-init="window.addEventListener('scroll', () => show = window.scrollY > 1000)">
+    <button x-show="show" @click="scrollTop" x-transition.opacity
+      class="fixed bottom-5 right-5 z-50 bg-yellow hover:bg-blue-700 text-black p-3 rounded-full shadow-lg transition-slow hover:bg-primary"
+      aria-label="Scroll to top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-up-dashed">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M12 5v6m0 3v1.5m0 3v.5" />
+        <path d="M16 9l-4 -4" />
+        <path d="M8 9l4 -4" />
+      </svg>
+    </button>
+  </div>
+  <script src="assets/js/swiper.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
