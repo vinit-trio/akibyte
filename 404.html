@@ -23,11 +23,12 @@
               class="custom-logo">
           </a>
         </div>
-        <nav class="hidden">
-          <ul id="menu-header-de" class="flex items-center gap-10">
+        <nav class="hidden xxl:block shrink-0">
+          <ul id="menu-header-de" class="flex items-center gap-6 3xl:gap-10 text-base">
             <li id="menu-item-14"
               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-12 current_page_item menu-item-14">
-              <a href="https://new.akibite.com/" aria-current="page">Home</a></li>
+              <a href="https://new.akibite.com/" aria-current="page">Home</a>
+            </li>
             <li id="menu-item-326" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-326"><a
                 href="https://new.akibite.com/wir/">Über uns</a></li>
             <li id="menu-item-452"
@@ -35,19 +36,26 @@
                 href="https://new.akibite.com/webservices/">Webservices</a>
               <ul class="sub-menu" style="overflow: hidden;">
                 <li id="menu-item-2127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2127">
-                  <a href="https://new.akibite.com/branding/">Branding</a></li>
+                  <a href="https://new.akibite.com/branding/">Branding</a>
+                </li>
                 <li id="menu-item-2172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172">
-                  <a href="https://new.akibite.com/webdesign-agentur/">UI/UX Design</a></li>
+                  <a href="https://new.akibite.com/webdesign-agentur/">UI/UX Design</a>
+                </li>
                 <li id="menu-item-2171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2171">
-                  <a href="https://new.akibite.com/websites/">Websites</a></li>
+                  <a href="https://new.akibite.com/websites/">Websites</a>
+                </li>
                 <li id="menu-item-2170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2170">
-                  <a href="https://new.akibite.com/onlineshop-agentur/">Onlineshops</a></li>
+                  <a href="https://new.akibite.com/onlineshop-agentur/">Onlineshops</a>
+                </li>
                 <li id="menu-item-2169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2169">
-                  <a href="https://new.akibite.com/marketing/">Marketing</a></li>
+                  <a href="https://new.akibite.com/marketing/">Marketing</a>
+                </li>
                 <li id="menu-item-2168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2168">
-                  <a href="https://new.akibite.com/seo-agentur/">SEO</a></li>
+                  <a href="https://new.akibite.com/seo-agentur/">SEO</a>
+                </li>
                 <li id="menu-item-2167" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2167">
-                  <a href="https://new.akibite.com/geo/">GEO</a></li>
+                  <a href="https://new.akibite.com/geo/">GEO</a>
+                </li>
               </ul>
             </li>
             <li id="menu-item-704" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-704"><a
@@ -58,9 +66,11 @@
               <ul class="sub-menu" style="overflow: hidden;">
                 <li id="menu-item-3093" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3093">
                   <a href="https://new.akibite.com/chatgpt-workshop-fuer-content-creator/">Chat GPT für Content
-                    Creator</a></li>
+                    Creator</a>
+                </li>
                 <li id="menu-item-3092" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3092">
-                  <a href="https://new.akibite.com/seo-keyword-recherche-workshop/">SEO Workshop</a></li>
+                  <a href="https://new.akibite.com/seo-keyword-recherche-workshop/">SEO Workshop</a>
+                </li>
               </ul>
             </li>
             <li id="menu-item-3005" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3005"><a
@@ -83,7 +93,7 @@
               <path d="M13 6l6 6"></path>
             </svg>
           </a>
-          <button aria-label="button" @click="open = true">
+          <button aria-label="button" @click="open = true" class="xxl:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" width="32 " viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
               class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep">
@@ -93,8 +103,8 @@
               <path d="M10 18h10"></path>
             </svg>
           </button>
-          <div x-show="open" x-transition.opacity="" @click="open = false"
-            class="fixed inset-0 bg-black bg-opacity-50 z-40" style="display: none;"></div>
+          <div x-show="open" @click="open = false" class="fixed inset-0 bg-black bg-opacity-50 z-40"
+            style="display: none;"></div>
           <div x-show="open" x-transition:enter="transition transform duration-300"
             x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0"
             x-transition:leave="transition transform duration-300" x-transition:leave-start="translate-x-0"
@@ -111,7 +121,8 @@
               <ul id="menu-header-de-1" class="flex flex-col gap-2 text-[13px] text-black">
                 <li
                   class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-12 current_page_item menu-item-14">
-                  <a href="https://new.akibite.com/" aria-current="page">Home</a></li>
+                  <a href="https://new.akibite.com/" aria-current="page">Home</a>
+                </li>
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-326"><a
                     href="https://new.akibite.com/wir/">Über uns</a></li>
                 <li
@@ -166,7 +177,8 @@
           <div class="text-yellow uppercase pb-3">
             [ Error ]
           </div>
-          <h1 class="text-[clamp(8.125rem,6.6821rem+6.1566vw,12.5rem)] leading-[clamp(5.4375rem,4.4687rem+4.1337vw,8.375rem)]">
+          <h1
+            class="text-[clamp(8.125rem,6.6821rem+6.1566vw,12.5rem)] leading-[clamp(5.4375rem,4.4687rem+4.1337vw,8.375rem)]">
             404
           </h1>
           <h2 class="text-h2">
@@ -190,10 +202,10 @@
   <footer class="pt-100 text-[#a2a2a2] border-t border-[#E0E0E030] text-[15px] xl:text-lg">
     <div class="container">
       <div class="space-y-3">
-        <h2 class="text-h2 text-primary"  >
+        <h2 class="text-h2 text-primary">
           Make your brand unforgettable!
         </h2>
-        <div class="pb-3"  >
+        <div class="pb-3">
           <p>
             Strategy, design, automation — whatever you need, we're eager to execute. No, really, we are ;)
           </p>
@@ -204,7 +216,7 @@
       </div>
       <div class="my-12 border-t border-[#E0E0E030]"></div>
       <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-10 sm:gap-100">
-        <div   class="space-y-5">
+        <div class="space-y-5">
           <a aria-label="link" href="#">
             <img src="assets/images/logo.svg" alt="Logo" class="w-[275px]">
           </a>
@@ -223,7 +235,7 @@
             </p>
           </div>
         </div>
-        <div  >
+        <div>
           <div class="text-lg sm:text-xl text-primary mb-4">
             <p>
               Contact
@@ -244,7 +256,7 @@
             </li>
           </ul>
         </div>
-        <div  >
+        <div>
           <div class="text-lg sm:text-xl text-primary mb-4">
             <p>
               Pages
@@ -269,7 +281,7 @@
             </li>
           </ul>
         </div>
-        <div  >
+        <div>
           <div class="text-lg sm:text-xl text-primary mb-4">
             <p>
               Follow Us
@@ -354,8 +366,7 @@
         </div>
       </div>
       <div
-        class="flex flex-col sm:flex-row gap-3 justify-between items-center text-xs sm:text-[15px] py-8 border-t border-[#E0E0E030] mt-12 text-primary font-medium"
-         >
+        class="flex flex-col sm:flex-row gap-3 justify-between items-center text-xs sm:text-[15px] py-8 border-t border-[#E0E0E030] mt-12 text-primary font-medium">
         <p>
           Copyright © <span x-data="{ year: new Date().getFullYear() }" x-text="year">2025</span> ASK Project
         </p>

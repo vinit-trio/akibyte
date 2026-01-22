@@ -24,11 +24,12 @@
               class="custom-logo">
           </a>
         </div>
-        <nav class="hidden">
-          <ul id="menu-header-de" class="flex items-center gap-10">
+        <nav class="hidden xxl:block shrink-0">
+          <ul id="menu-header-de" class="flex items-center gap-6 3xl:gap-10 text-base">
             <li id="menu-item-14"
               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-12 current_page_item menu-item-14">
-              <a href="https://new.akibite.com/" aria-current="page">Home</a></li>
+              <a href="https://new.akibite.com/" aria-current="page">Home</a>
+            </li>
             <li id="menu-item-326" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-326"><a
                 href="https://new.akibite.com/wir/">Über uns</a></li>
             <li id="menu-item-452"
@@ -36,19 +37,26 @@
                 href="https://new.akibite.com/webservices/">Webservices</a>
               <ul class="sub-menu" style="overflow: hidden;">
                 <li id="menu-item-2127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2127">
-                  <a href="https://new.akibite.com/branding/">Branding</a></li>
+                  <a href="https://new.akibite.com/branding/">Branding</a>
+                </li>
                 <li id="menu-item-2172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172">
-                  <a href="https://new.akibite.com/webdesign-agentur/">UI/UX Design</a></li>
+                  <a href="https://new.akibite.com/webdesign-agentur/">UI/UX Design</a>
+                </li>
                 <li id="menu-item-2171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2171">
-                  <a href="https://new.akibite.com/websites/">Websites</a></li>
+                  <a href="https://new.akibite.com/websites/">Websites</a>
+                </li>
                 <li id="menu-item-2170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2170">
-                  <a href="https://new.akibite.com/onlineshop-agentur/">Onlineshops</a></li>
+                  <a href="https://new.akibite.com/onlineshop-agentur/">Onlineshops</a>
+                </li>
                 <li id="menu-item-2169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2169">
-                  <a href="https://new.akibite.com/marketing/">Marketing</a></li>
+                  <a href="https://new.akibite.com/marketing/">Marketing</a>
+                </li>
                 <li id="menu-item-2168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2168">
-                  <a href="https://new.akibite.com/seo-agentur/">SEO</a></li>
+                  <a href="https://new.akibite.com/seo-agentur/">SEO</a>
+                </li>
                 <li id="menu-item-2167" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2167">
-                  <a href="https://new.akibite.com/geo/">GEO</a></li>
+                  <a href="https://new.akibite.com/geo/">GEO</a>
+                </li>
               </ul>
             </li>
             <li id="menu-item-704" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-704"><a
@@ -59,9 +67,11 @@
               <ul class="sub-menu" style="overflow: hidden;">
                 <li id="menu-item-3093" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3093">
                   <a href="https://new.akibite.com/chatgpt-workshop-fuer-content-creator/">Chat GPT für Content
-                    Creator</a></li>
+                    Creator</a>
+                </li>
                 <li id="menu-item-3092" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3092">
-                  <a href="https://new.akibite.com/seo-keyword-recherche-workshop/">SEO Workshop</a></li>
+                  <a href="https://new.akibite.com/seo-keyword-recherche-workshop/">SEO Workshop</a>
+                </li>
               </ul>
             </li>
             <li id="menu-item-3005" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3005"><a
@@ -84,7 +94,7 @@
               <path d="M13 6l6 6"></path>
             </svg>
           </a>
-          <button aria-label="button" @click="open = true">
+          <button aria-label="button" @click="open = true" class="xxl:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" width="32 " viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
               class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep">
@@ -94,8 +104,8 @@
               <path d="M10 18h10"></path>
             </svg>
           </button>
-          <div x-show="open" x-transition.opacity="" @click="open = false"
-            class="fixed inset-0 bg-black bg-opacity-50 z-40" style="display: none;"></div>
+          <div x-show="open" @click="open = false" class="fixed inset-0 bg-black bg-opacity-50 z-40"
+            style="display: none;"></div>
           <div x-show="open" x-transition:enter="transition transform duration-300"
             x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0"
             x-transition:leave="transition transform duration-300" x-transition:leave-start="translate-x-0"
@@ -112,7 +122,8 @@
               <ul id="menu-header-de-1" class="flex flex-col gap-2 text-[13px] text-black">
                 <li
                   class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-12 current_page_item menu-item-14">
-                  <a href="https://new.akibite.com/" aria-current="page">Home</a></li>
+                  <a href="https://new.akibite.com/" aria-current="page">Home</a>
+                </li>
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-326"><a
                     href="https://new.akibite.com/wir/">Über uns</a></li>
                 <li
@@ -185,20 +196,19 @@
       <div class="container">
         <div class="grid xxl:grid-cols-3 gap-12 xxl:gap-0">
           <div>
-            <div class="text-blue uppercase text-sm font-semibold tracking-[3px] mb-3" 
-              >
+            <div class="text-blue uppercase text-sm font-semibold tracking-[3px] mb-3">
               <p>
                 [&nbsp;about us&nbsp;]
               </p>
             </div>
-            <h2 class="text-h2"  >
+            <h2 class="text-h2">
               We are all about you - no really, we are!
             </h2>
           </div>
           <div class="hidden xxl:block"></div>
           <div class="hidden xxl:block"></div>
           <div class="hidden xxl:block"></div>
-          <div class="space-y-4 text-[#a2a2a2]"  >
+          <div class="space-y-4 text-[#a2a2a2]">
             <div>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu est fermentum, sodales magna non,
@@ -219,7 +229,7 @@
           <div class="hidden xxl:block"></div>
           <div class="hidden xxl:block"></div>
           <div class="hidden xxl:block"></div>
-          <div  >
+          <div>
             <div class="image">
               <img src="assets/images/about_img_2.jpg" alt="About us page image">
             </div>
@@ -229,17 +239,17 @@
     </section>
     <section class="py-100 bg-blue text-black text-[15px] lg:text-lg">
       <div class="container space-y-5 mb-10 text-center">
-        <div class="uppercase text-sm font-semibold tracking-[3px]"  >
+        <div class="uppercase text-sm font-semibold tracking-[3px]">
           <p>
             [&nbsp;our team&nbsp;]
           </p>
         </div>
-        <h2 class="text-h2 md:w-2/3 xl:w-1/2 mx-auto"  >
+        <h2 class="text-h2 md:w-2/3 xl:w-1/2 mx-auto">
           Where Creativity Meets Results
         </h2>
       </div>
       <div class="container">
-        <div  
+        <div
           class="flex flex-col md:flex-row gap-5 md:gap-10 md:items-center justify-between py-[30px] border-b border-[#0A0A0A30] last-of-type:border-none">
           <div class="flex flex-col sm:flex-row gap-5 sm:items-center">
             <div class="image">
@@ -267,7 +277,7 @@
             </div>
           </div>
         </div>
-        <div  
+        <div
           class="flex flex-col md:flex-row gap-5 md:gap-10 md:items-center justify-between py-[30px] border-b border-[#0A0A0A30] last-of-type:border-none">
           <div class="flex flex-col sm:flex-row gap-5 sm:items-center">
             <div class="image">
@@ -295,7 +305,7 @@
             </div>
           </div>
         </div>
-        <div  
+        <div
           class="flex flex-col md:flex-row gap-5 md:gap-10 md:items-center justify-between py-[30px] border-b border-[#0A0A0A30] last-of-type:border-none">
           <div class="flex flex-col sm:flex-row gap-5 sm:items-center">
             <div class="image">
@@ -323,7 +333,7 @@
             </div>
           </div>
         </div>
-        <div  
+        <div
           class="flex flex-col md:flex-row gap-5 md:gap-10 md:items-center justify-between py-[30px] border-b border-[#0A0A0A30] last-of-type:border-none">
           <div class="flex flex-col sm:flex-row gap-5 sm:items-center">
             <div class="image">
@@ -357,13 +367,12 @@
       <div class="container">
         <div class="flex flex-col xxl:flex-row xxl:items-end gap-10 xxl:gap-5">
           <div class="xxl:w-5/12 space-y-4">
-            <div class="text-yellow uppercase text-sm font-semibold tracking-[3px]" 
-              >
+            <div class="text-yellow uppercase text-sm font-semibold tracking-[3px]">
               <p>
                 [&nbsp;Achievements&nbsp;]
               </p>
             </div>
-            <h2 class="text-h2 text-primary"  >
+            <h2 class="text-h2 text-primary">
               Think Outside the Box with Our Power
             </h2>
             <a href="#" class="btn_1 btn_yellow arrow">
@@ -372,8 +381,7 @@
           </div>
           <div class="xxl:w-8/12 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-10 place-items-end">
             <div
-              class="w-full pl-4 sm:pl-[30px] lg:first-of-type:p-0 border-l border-[#E0E0E030] lg:first-of-type:border-0"
-               >
+              class="w-full pl-4 sm:pl-[30px] lg:first-of-type:p-0 border-l border-[#E0E0E030] lg:first-of-type:border-0">
               <div class="text-h2 flex">
                 <span class="counting">27</span>
                 <span class="suf">+</span>
@@ -381,8 +389,7 @@
               <span>Years of Experience</span>
             </div>
             <div
-              class="w-full pl-4 sm:pl-[30px] lg:first-of-type:p-0 border-l border-[#E0E0E030] lg:first-of-type:border-0 lg:pb-[5vw]"
-               >
+              class="w-full pl-4 sm:pl-[30px] lg:first-of-type:p-0 border-l border-[#E0E0E030] lg:first-of-type:border-0 lg:pb-[5vw]">
               <div class="text-h2 flex">
                 <span class="counting">900</span>
                 <span class="suf">+</span>
@@ -390,8 +397,7 @@
               <span>Completed Projects</span>
             </div>
             <div
-              class="w-full pl-4 sm:pl-[30px] lg:first-of-type:p-0 border-l border-[#E0E0E030] lg:first-of-type:border-0 lg:pb-[10vw]"
-               >
+              class="w-full pl-4 sm:pl-[30px] lg:first-of-type:p-0 border-l border-[#E0E0E030] lg:first-of-type:border-0 lg:pb-[10vw]">
               <div class="text-h2 flex">
                 <span class="counting">100</span>
                 <span class="suf">%</span>
@@ -399,8 +405,7 @@
               <span>Professional Team</span>
             </div>
             <div
-              class="w-full pl-4 sm:pl-[30px] lg:first-of-type:p-0 border-l border-[#E0E0E030] lg:first-of-type:border-0 lg:pb-[15vw]"
-               >
+              class="w-full pl-4 sm:pl-[30px] lg:first-of-type:p-0 border-l border-[#E0E0E030] lg:first-of-type:border-0 lg:pb-[15vw]">
               <div class="text-h2 flex">
                 <span class="counting">99</span>
                 <span class="suf">%</span>
@@ -413,18 +418,18 @@
     </section>
     <section class="bg-primary py-100 text-black">
       <div class="container text-center mb-16">
-        <div class="uppercase text-sm font-semibold tracking-[3px] mb-5"  >
+        <div class="uppercase text-sm font-semibold tracking-[3px] mb-5">
           <p>
             [&nbsp;Our Values&nbsp;]
           </p>
         </div>
-        <h2 class="text-h2 md:w-2/3 xl:w-1/2 mx-auto"  >
+        <h2 class="text-h2 md:w-2/3 xl:w-1/2 mx-auto">
           Elevate Your Brand With Our Unrivaled Agency
         </h2>
       </div>
       <div class="container">
         <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-5">
-          <div class="border p-4 sm:p-[30px] border-black/20 hover:border-black transition-slow"  >
+          <div class="border p-4 sm:p-[30px] border-black/20 hover:border-black transition-slow">
             <div class="p-4 bg-secondary w-fit rounded-full text-primary mb-5 sm:mb-16">
               <svg xmlns="http://www.w3.org/2000/svg" width="23" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
@@ -442,7 +447,7 @@
               leo.
             </p>
           </div>
-          <div class="border p-4 sm:p-[30px] border-black/20 hover:border-black transition-slow"  >
+          <div class="border p-4 sm:p-[30px] border-black/20 hover:border-black transition-slow">
             <div class="p-4 bg-secondary w-fit rounded-full text-primary mb-5 sm:mb-16">
               <svg xmlns="http://www.w3.org/2000/svg" width="23" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
@@ -462,7 +467,7 @@
               leo.
             </p>
           </div>
-          <div class="border p-4 sm:p-[30px] border-black/20 hover:border-black transition-slow"  >
+          <div class="border p-4 sm:p-[30px] border-black/20 hover:border-black transition-slow">
             <div class="p-4 bg-secondary w-fit rounded-full text-primary mb-5 sm:mb-16">
               <svg xmlns="http://www.w3.org/2000/svg" width="23" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
@@ -481,7 +486,7 @@
               leo.
             </p>
           </div>
-          <div class="border p-4 sm:p-[30px] border-black/20 hover:border-black transition-slow"  >
+          <div class="border p-4 sm:p-[30px] border-black/20 hover:border-black transition-slow">
             <div class="p-4 bg-secondary w-fit rounded-full text-primary mb-5 sm:mb-16">
               <svg xmlns="http://www.w3.org/2000/svg" width="23" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
@@ -503,7 +508,7 @@
               leo.
             </p>
           </div>
-          <div class="border p-4 sm:p-[30px] border-black/20 hover:border-black transition-slow"  >
+          <div class="border p-4 sm:p-[30px] border-black/20 hover:border-black transition-slow">
             <div class="p-4 bg-secondary w-fit rounded-full text-primary mb-5 sm:mb-16">
               <svg xmlns="http://www.w3.org/2000/svg" width="23" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
@@ -522,7 +527,7 @@
               leo.
             </p>
           </div>
-          <div class="border p-4 sm:p-[30px] border-black/20 hover:border-black transition-slow"  >
+          <div class="border p-4 sm:p-[30px] border-black/20 hover:border-black transition-slow">
             <div class="p-4 bg-secondary w-fit rounded-full text-primary mb-5 sm:mb-16">
               <svg xmlns="http://www.w3.org/2000/svg" width="23" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
@@ -547,17 +552,16 @@
       <div class="container">
         <div class="flex flex-col xl:flex-row gap-10 sm:gap-100">
           <div class="xl:w-6/12 space-y-4">
-            <div class="text-yellow uppercase text-sm font-semibold tracking-[3px]" 
-              >
+            <div class="text-yellow uppercase text-sm font-semibold tracking-[3px]">
               <p>
                 [&nbsp;FAQS&nbsp;]
               </p>
             </div>
-            <h2 class="text-h2 text-primary max-w-2xl"  >
+            <h2 class="text-h2 text-primary max-w-2xl">
               Frequently Asked Questions
             </h2>
           </div>
-          <div class="xl:w-6/12" x-data="{selected:1}"  >
+          <div class="xl:w-6/12" x-data="{selected:1}">
             <ul>
               <li class="border-b py-[22px] border-[#E0E0E030]">
                 <button aria-label="button" type="button" @click="selected !== 1 ? selected = 1 : selected = null"
@@ -735,23 +739,21 @@
     <section class="text-center bg-black px-[30px]">
       <div class="bg-secondary">
         <div class="container p-0 space-y-5 py-100 max-w-[850px]">
-          <div class="text-yellow uppercase text-sm font-semibold tracking-[3px]" 
-            >
+          <div class="text-yellow uppercase text-sm font-semibold tracking-[3px]">
             <p>
               [&nbsp;Get Started&nbsp;]
             </p>
           </div>
-          <h2 class="text-h2"  >
+          <h2 class="text-h2">
             Unleash the Graceful Potential of Your Brand
           </h2>
-          <div class="space-y-3 text-[#a2a2a2] max-w-[515px] mx-auto pb-3"  >
+          <div class="space-y-3 text-[#a2a2a2] max-w-[515px] mx-auto pb-3">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec mattis, pulvinar
               dapibus leo.
             </p>
           </div>
-          <div class="btns flex-wrap flex gap-5 items-center justify-center text-[15px]" 
-            >
+          <div class="btns flex-wrap flex gap-5 items-center justify-center text-[15px]">
             <a href="#" class="btn_1 btn_yellow arrow">
               Get started
             </a>
@@ -760,7 +762,7 @@
             </button>
           </div>
         </div>
-        <div class="container p-0"  >
+        <div class="container p-0">
           <div class="swiper project_slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -843,10 +845,10 @@
   <footer class="pt-100 text-[#a2a2a2] border-t border-[#E0E0E030] text-[15px] xl:text-lg">
     <div class="container">
       <div class="space-y-3">
-        <h2 class="text-h2 text-primary"  >
+        <h2 class="text-h2 text-primary">
           Make your brand unforgettable!
         </h2>
-        <div class="pb-3"  >
+        <div class="pb-3">
           <p>
             Strategy, design, automation — whatever you need, we're eager to execute. No, really, we are ;)
           </p>
@@ -857,7 +859,7 @@
       </div>
       <div class="my-12 border-t border-[#E0E0E030]"></div>
       <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-10 sm:gap-100">
-        <div   class="space-y-5">
+        <div class="space-y-5">
           <a aria-label="link" href="#">
             <img src="assets/images/logo.svg" alt="Logo" class="w-[275px]">
           </a>
@@ -876,7 +878,7 @@
             </p>
           </div>
         </div>
-        <div  >
+        <div>
           <div class="text-lg sm:text-xl text-primary mb-4">
             <p>
               Contact
@@ -897,7 +899,7 @@
             </li>
           </ul>
         </div>
-        <div  >
+        <div>
           <div class="text-lg sm:text-xl text-primary mb-4">
             <p>
               Pages
@@ -922,7 +924,7 @@
             </li>
           </ul>
         </div>
-        <div  >
+        <div>
           <div class="text-lg sm:text-xl text-primary mb-4">
             <p>
               Follow Us
