@@ -855,7 +855,7 @@ section {
   margin-top: 2rem;
   margin-bottom: 1.25rem;
   font-size: clamp(1.8125rem, 1.7rem + 0.5625vw, 2.375rem);
-  line-height: clamp(1.95rem, 1.89rem + 0.3vw, 2.25rem);
+  line-height: clamp(2.25rem, 2.125rem + 0.625vw, 2.875rem);
 }
 
 @media (min-width: 576px) {
@@ -1692,7 +1692,7 @@ section {
 
 .text-h3 {
   font-size: clamp(1.8125rem, 1.7rem + 0.5625vw, 2.375rem);
-  line-height: clamp(1.95rem, 1.89rem + 0.3vw, 2.25rem);
+  line-height: clamp(2.25rem, 2.125rem + 0.625vw, 2.875rem);
 }
 
 .text-h4 {
@@ -2183,7 +2183,7 @@ header nav .current-menu-item a {
 
 .post-wrapper h1 {
   font-size: clamp(1.8125rem, 1.7rem + 0.5625vw, 2.375rem);
-  line-height: clamp(1.95rem, 1.89rem + 0.3vw, 2.25rem);
+  line-height: clamp(2.25rem, 2.125rem + 0.625vw, 2.875rem);
 }
 
 .post-wrapper h2 {
@@ -2860,10 +2860,6 @@ header nav .current-menu-item a {
 
   .xxl\:gap-5 {
     gap: 1.25rem;
-  }
-
-  .xxl\:gap-10 {
-    gap: 2.5rem;
   }
 
   .xxl\:px-10 {

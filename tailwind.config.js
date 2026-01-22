@@ -38,7 +38,7 @@ export default {
       fontSize: {
         'h1': ["clamp(3.375rem, 3.05rem + 1.625vw, 5rem)", { lineHeight: "clamp(3.375rem, 3.05rem + 1.625vw, 5rem)", }],
         'h2': ["clamp(2.5rem, 2.2875rem + 1.0625vw, 3.5625rem)", { lineHeight: "clamp(3rem, 2.745rem + 1.275vw, 4.275rem);" }],
-        'h3': ["clamp(1.8125rem, 1.7rem + 0.5625vw, 2.375rem)", { lineHeight: "clamp(1.95rem, 1.89rem + 0.3vw, 2.25rem)" }],
+        'h3': ["clamp(1.8125rem, 1.7rem + 0.5625vw, 2.375rem)", { lineHeight: "clamp(2.25rem, 2.125rem + 0.625vw, 2.875rem)" }],
         'h4': ["clamp(1.625rem, 1.575rem + 0.25vw, 1.875rem)", { lineHeight: "clamp(1.9375rem, 1.875rem + 0.3125vw, 2.25rem)" }],
         'h5': ["clamp(1.4375rem, 1.4125rem + 0.125vw, 1.5625rem)", { lineHeight: "clamp(2rem, 1.9625rem + 0.1875vw, 2.1875rem)" }],
         'h6': ["clamp(0.9375rem, 0.8375rem + 0.5vw, 1.4375rem)", { lineHeight: "clamp(1.5rem, 1.3375rem + 0.8125vw, 2.3125rem)" }],
